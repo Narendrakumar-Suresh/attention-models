@@ -21,6 +21,8 @@ The attention mechanism computes how much attention to pay to each part of the i
 ```
 Attention(Q,K,V) = softmax(QK^T/√d_k)V
 ```
+> [!NOTE]  
+> Here K^T refers to transpose of matrix K
 
 Where:
 - `QK^T` computes the similarity between queries and keys
