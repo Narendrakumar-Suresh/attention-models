@@ -59,12 +59,10 @@ An advanced attention mechanism that uses multiple attention heads in parallel, 
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd attention
+git clone https://github.com/Narendrakumar-Suresh/attention-models.git
+cd attention-models
 
-# Install dependencies
-pip install -r requirements.txt
-# or using uv
+# Install dependencies using uv
 uv sync
 ```
 
@@ -72,13 +70,13 @@ uv sync
 
 ```bash
 # Train with default parameters
-python main.py
+uv run main.py
 
 # Interactive mode for parameter selection
-python main.py --interactive
+uv run main.py --interactive
 
 # Custom training
-python main.py --model multihead --embed_dim 128 --num_heads 8 --epochs 200
+uv run main.py --model multihead --embed_dim 128 --num_heads 8 --epochs 200
 ```
 
 ### Command Line Options
@@ -104,17 +102,17 @@ python main.py --model multihead --embed_dim 128 --num_heads 8 --epochs 200
 
 ### Example 1: Basic Self Attention
 ```bash
-python main.py --model selfhead --embed_dim 32 --epochs 50
+uv run main.py --model selfhead --embed_dim 32 --epochs 50
 ```
 
 ### Example 2: Multi-Head Attention with Custom Parameters
 ```bash
-python main.py --model multihead --embed_dim 256 --num_heads 16 --learning_rate 0.0001 --epochs 300
+uv run main.py --model multihead --embed_dim 256 --num_heads 16 --learning_rate 0.0001 --epochs 300
 ```
 
 ### Example 3: Save Trained Model
 ```bash
-python main.py --model multihead --embed_dim 128 --num_heads 8 --save_path models/my_trained_model.pth
+uv run main.py --model multihead --embed_dim 128 --num_heads 8 --save_path models/my_trained_model.pth
 ```
 
 ## 🔬 Understanding the Code

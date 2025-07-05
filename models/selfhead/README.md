@@ -131,13 +131,13 @@ print(f"Output shape: {output.shape}")  # (4, 10, 64)
 
 ```bash
 # Train self attention with default parameters
-python main.py --model selfhead
+uv run main.py --model selfhead
 
 # Custom parameters
-python main.py --model selfhead --embed_dim 128 --epochs 200 --learning_rate 0.0001
+uv run main.py --model selfhead --embed_dim 128 --epochs 200 --learning_rate 0.0001
 
 # Interactive mode
-python main.py --model selfhead --interactive
+uv run main.py --model selfhead --interactive
 ```
 
 ## 🔍 Understanding the Output

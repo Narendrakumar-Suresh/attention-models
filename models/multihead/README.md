@@ -156,13 +156,13 @@ print(f"Output shape: {output.shape}")  # (4, 10, 64)
 
 ```bash
 # Train multi-head attention with default parameters
-python main.py --model multihead
+uv run main.py --model multihead
 
 # Custom parameters
-python main.py --model multihead --embed_dim 256 --num_heads 16 --epochs 300
+uv run main.py --model multihead --embed_dim 256 --num_heads 16 --epochs 300
 
 # Interactive mode
-python main.py --model multihead --interactive
+uv run main.py --model multihead --interactive
 ```
 
 ### Parameter Guidelines
